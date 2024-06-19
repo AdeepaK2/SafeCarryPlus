@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safe Carry Plus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <h1>Safe Carry Plus</h1>
+</div>
+<dialog id="loginDialog">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="loginButton">Login</button>
+    <p id="loginMessage"></p>
+</dialog>
+<div class="container">
+    <h2 id="warningMessage" class="warning" style="display: none;"></h2>
+    <div id="map"></div>
+    <div class="data">
+        <p>Temperature: <span id="temperature">N/A</span> °C</p>
+        <p>Humidity: <span id="humidity">N/A</span> %</p>
+        <p id="movementStatus">Movement: <span id="movement">N/A</span></p>
+    </div>
+    <div class="timestamp" id="lastOnline"></div>
+    <button id="settingsButton">Settings</button>
+    <button id="toggleViewButton">View Location History</button>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsrPhZb9BmNGYmo6U4gt3xNc7sb0rg2Xk"></script>
+<script src="app.js"></script>
+</body>
+</html>
